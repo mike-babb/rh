@@ -1,0 +1,123 @@
+8:def draw(fig=None, dir='illustrations/',ext='pdf'):
+28:def fig_factor_tree(dir, ext):
+61:    def __init__(self, n):
+69:    def value(self):
+80:    def __repr__(self):
+89:    def plot(self, lines=None, labels=None, sort=False):
+124:    def _ftree(self, rows, v, sort):
+174:    def _plot_ftree(self, rows, lines, labels):
+212:def bag_of_primes(steps):
+232:def fig_questions(dir, ext):
+236:def questions(n=100,k=17,fs=20):
+248:def fig_erat(dir,ext):
+256:def number_grid(c, box_args=None, font_args=None, offset=0):
+298:def sieve_step(p, n, gone=(1,1,1), prime=(1,0,0), \
+339:def fig_simrates(dir,ext):
+344:def similar_rates():
+370:def fig_log(dir, ext):
+374:def fig_proportion_primes(dir,ext):
+379:def plot_step_function(v, vertical_lines=True, **args):
+407:def proportion_of_primes(bound, **args):
+436:def prime_gaps(maxp):
+449:def prime_gap_distribution(maxp):
+466:def fig_primegapdist(dir,ext):
+474:def f(B):
+484:def prime_gap_plots(maxp, gap_sizes):
+506:def fig_primegap_race(dir, ext):
+528:def mult_even_odd_count(bound):
+556:def fig_multpar(dir,ext):
+566:def race_mult_parity(bound, time_series=False, **kwds):
+598:def mult_parities_python(bound, verbose=False):
+636:def fig_logXoverX(dir, ext):
+648:def fig_prime_pi_aspect1(dir,ext):
+656:def fig_prime_pi(dir,ext):
+667:def fig_prime_pi_nofill(dir,ext):
+675:def plot_prime_pi(n = 25, **args):
+684:def fig_pi_Li(dir, ext):
+693:def fig_sieves(dir,ext):
+701:def plot_sieve(n, x, poly={}, lin={}, label=True, shade=True):
+746:def plot_three_sieves(m, shade=True):
+755:def plot_multiple_sieves(m=100, k = [2,3,5], shade=True):
+777:def plot_all_sieves(x, shade=True):
+788:def area_under_inverse_log(m, **args):
+817:def fig_inverse_of_log(dir,ext):
+825:def fig_li_pi_loginv(dir,ext):
+828:def plot_li_pi_loginv(xmax=200):
+840:def fig_primes_line(dir,ext):
+854:def psi_data(xmax):
+864:def plot_psi(xmax, **kwds):
+868:def fig_psi(dir,ext):
+876:def plot_Psi(xmax, **kwds):
+881:def fig_Psi(dir, ext):
+887:def fig_Psiprime(dir, ext):
+907:def fig_Phi(dir=0, ext=0):
+939:def fig_waves(dir,ext):
+988:def fig_sawtooth(dir,ext):
+995:def plot_sawtooth(xmax):
+1001:def plot_sawtooth_spectrum(xmax):
+1009:def fig_pure_tone(dir,ext):
+1019:def fig_mixed_tone(dir,ext):
+1028:def fig_even_function(dir, ext):
+1031:    def g(z):
+1036:def fig_even_pi(dir, ext):
+1043:def fig_oo_integral(dir, ext):
+1057:def fig_fourier_machine(dir, ext):
+1072:def fig_simple_staircase(dir,ext):
+1082:def fig_mini_phihat_even(dir,ext):
+1086:def fig_phihat_even(dir,ext):
+1092:def fig_phihat_even_all(dir, ext):
+1098:def symbolic_phihat(bound):
+1107:def plot_symbolic_phihat(bound, xmin, xmax, plot_points=1000, zeros=True):
+1125:def fig_aplusone(dir,ext):
+1130:def fig_calculus(dir,ext):
+1147:def fig_jump(dir,ext):
+1167:def smoothderiv(e):
+1168:    def deriv(f, delta):
+1171:        def g(x):
+1186:def fig_dirac(dir,ext):
+1193:def fig_two_delta(dir,ext):
+1207:def fig_phi(dir,ext):
+1218:def phi_interval_plot(xmin, xmax, zeros=1000,fontsize=12,drop=20):
+1224:def phi_approx(m, positive_only=False, symbolic=False):
+1232:    def f(s):
+1237:        def g(s):
+1243:def phi_approx_plot(xmin, xmax, zeros, pnts=2000, dots=True, positive_only=False,
+1252:def primepower_dots(xmin, xmax, fontsize=7, drop=10):
+1271:def fig_psi_waves(dir, ext):
+1292:def fig_moebius(dir,ext):
+1297:def riemann_R(terms):
+1299:    def f(x):
+1310:def plot_pi_riemann_gauss(xmin, xmax, terms):
+1318:def fig_pi_riemann_gauss(dir,ext):
+1342:    def __init__(self, kmax, xmax, prec=50):
+1364:    def __repr__(self):
+1367:    def _init_coeffs(self):
+1375:    def _check(self, x, k):
+1382:    def R(self, x):
+1393:    def Rk(self, x, k):
+1397:    def Sk(self, x, k):
+1414:    def Tk(self, x, k):
+1434:    def plot_Rk(self, k, xmin=2, xmax=None, **kwds):
+1462:def fig_Rk(dir, ext):
+1479:def gaussian_primes(B):
+1490:def fig_gaussian_primes(dir, ext):
+1505:def random_walk(n):
+1509:def random_walks(path, ext, B, n=1000, seed=1):
+1520:def fig_random_walks(dir, ext):
+1531:def plot_theta_C(C, xmax):
+1554:def fig_theta_C(dir, ext):
+1555:    def f(C,xmax):
+1565:def fig_theta_C_intro(dir, ext):
+1567:    def f(C):
+1588:def fig_cesaro(dir, ext):
+1590:    def f(C):
+1609:def fig_zero_spacing(dir, ext):
+1612:    def rmod(a,b):
+1615:    def f(per):
+1629:def fig_staircase_riemann_spectrum(dir, ext):
+1632:    def zeta_pi(X):  # not efficient -- but lets us use general plotting machinery, and is fast enough for a book illustration!
+1634:    def g(n, curve=False, **kwds):
+1652:def fig_riemann_spectrum_gaps(dir, ext):
+1663:def prime_pi_time_series(B):
+1678:def running_average(v):
+1690:def fig_li_minus_pi(dir, ext):
